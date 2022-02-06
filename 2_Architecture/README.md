@@ -12,4 +12,4 @@ graph TD
     C-->D
 
 
-![FlowChart](C:\Users\hp\Desktop\flowchart.png?raw=true)
+![FlowChart](./FlowChart.png)
