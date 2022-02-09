@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      working-directory: ./3_Implementation/version1/
+      working-directory: ./3_Implementation/
       run: make
