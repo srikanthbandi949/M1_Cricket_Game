@@ -31,7 +31,7 @@ int main()
    printf("\n1 - Fixed Overs\n2 - Play Until Out\n3 - How to Play?\n4 - Exit \nSelect your option : ");
    scanf("%d",&no_of_overs);
    do{
-      
+
       if(no_of_overs==1)
       {
       printf("Enter No Of Overs: ");
@@ -45,7 +45,7 @@ int main()
       }
       else if(no_of_overs==3)
       {
-         printf("-----------------------------------------------> How To Play? <-----------------------------------------\n");
+         printf("-----------------------------------------------> How To Play? <-------------------------------------------\n");
          printf("--> Until a player Won the toss Follow the Output and give whatever it asks you to give\n");
          printf("--> Then the Player who won the toss chooses either to Bat or to Bowl\n");
          printf("--> The Player who chose batting and bowling has to proceed by pressing enter Key one by one\n");
