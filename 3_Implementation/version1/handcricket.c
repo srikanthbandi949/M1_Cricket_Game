@@ -31,35 +31,36 @@ int main()
    printf("\n1 - Fixed Overs\n2 - Play Until Out\n3 - How to Play?\n4 - Exit \nSelect your option : ");
    scanf("%d",&no_of_overs);
    do{
-   if(no_of_overs==1)
-   {
-   printf("Enter No Of Overs: ");
-   scanf("%d",&overs);
-   player1Toss=GetPlayerToss(player1,player2,overs); 
-   
-   }
-   else if(no_of_overs==2)
-   {
-   player1Toss=GetPlayerToss(player1,player2,0);
-   }
-   else if(no_of_overs==3)
-   {
-      printf("-----------------------------------------------> How To Play? <-----------------------------------------\n");
-      printf("--> Until a player Won the toss Follow the Output and give whatever it asks you to give\n");
-      printf("--> Then the Player who won the toss chooses either to Bat or to Bowl\n");
-      printf("--> The Player who chose batting and bowling has to proceed by pressing enter Key one by one\n");
-      printf("--> Where System will generate Random number as runs for both players.Player 1 runs keeps on adding until his runs equals to player 2 runs\n");
-      printf("--> Finally When Player 1 is Out.Till then his runs are his final Score.The Same process will be Conducted for player 2.\n");
-      printf("--> Finally whoever is having Highest Score is the Winner.\n\n");
-      printf("For Example:\n--> Player 1 Won the Toss And Chose Batting.\n-->Then Player 2 is bowling,it asks the player2  to enter to bowl when player 2 presses it generates a random number,\n");
-      printf("-->After it asks player 1 to press enter to bat whenhe press enter it generates a random number,\n--> if both numbers are equal then batsman is out otherwise bowelers bowls next ball until out or end of overs\n\n" );
-   }
-   else
-   {
-      printf("---------------------------------------->>>  Invalid Choice  <<<------------------------------------------\n");
-   }
-   printf("1 - Fixed Overs\n2 - Play Until Out\n3 - How to Play?\n4 - Exit\nSelect your option : ");
-   scanf("%d",&no_of_overs);
+      
+      if(no_of_overs==1)
+      {
+      printf("Enter No Of Overs: ");
+      scanf("%d",&overs);
+      player1Toss=GetPlayerToss(player1,player2,overs); 
+      
+      }
+      else if(no_of_overs==2)
+      {
+      player1Toss=GetPlayerToss(player1,player2,0);
+      }
+      else if(no_of_overs==3)
+      {
+         printf("-----------------------------------------------> How To Play? <-----------------------------------------\n");
+         printf("--> Until a player Won the toss Follow the Output and give whatever it asks you to give\n");
+         printf("--> Then the Player who won the toss chooses either to Bat or to Bowl\n");
+         printf("--> The Player who chose batting and bowling has to proceed by pressing enter Key one by one\n");
+         printf("--> Where System will generate Random number as runs for both players.Player 1 runs keeps on adding until his runs equals to player 2 runs\n");
+         printf("--> Finally When Player 1 is Out.Till then his runs are his final Score.The Same process will be Conducted for player 2.\n");
+         printf("--> Finally whoever is having Highest Score is the Winner.\n\n");
+         printf("For Example:\n--> Player 1 Won the Toss And Chose Batting.\n-->Then Player 2 is bowling,it asks the player2  to enter to bowl when player 2 presses it generates a random number,\n");
+         printf("-->After it asks player 1 to press enter to bat whenhe press enter it generates a random number,\n--> if both numbers are equal then batsman is out otherwise bowelers bowls next ball until out or end of overs\n\n" );
+      }
+      else
+      {
+         printf("---------------------------------------->>>  Invalid Choice  <<<------------------------------------------\n");
+      }
+      printf("1 - Fixed Overs\n2 - Play Until Out\n3 - How to Play?\n4 - Exit\nSelect your option : ");
+      scanf("%d",&no_of_overs);
    }while(no_of_overs >= 1 && no_of_overs <=  3);
    return(0);
    }
