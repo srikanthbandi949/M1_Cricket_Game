@@ -3,6 +3,11 @@
 
 * Cricket Game Mini Project in c programm
 
+# SDLC Activity Based Learning 
+|Build| Code Quality | Unity | Git inspector | 
+|-----|--------------|-------|---------------|
+|[![C/C++ CI](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/c-cpp.yml)|   |        |      |
+
 ## Folder Structure
 | Folder | Description |
 |--------|-------------|
