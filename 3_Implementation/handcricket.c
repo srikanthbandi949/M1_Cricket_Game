@@ -13,12 +13,12 @@
 #include "handcricket.h"
 
 
-// int GetPlayerToss(char player1[],char player2[],int oversToplay);
+// int PlayerToss(char player1[],char player2[],int oversToplay);
 // int batting(char battingplayer[],char bowlingplayer[],int oversToplay);
 int main()
 {
 
-   int i,j,overs,no_of_overs,player1Toss,player2Toss;
+   int i,j,overs,choose_option,player1Toss,player2Toss;
    char player1[50],player2[50];
    srand(time(NULL));
    printf("-----------------------------------> WELCOME TO HAND CRICKET GAME <-------------------------------------\n");
@@ -29,21 +29,21 @@ int main()
    fflush(stdin);
    gets(player2);
    printf("\n1 - Fixed Overs\n2 - Play Until Out\n3 - How to Play?\n4 - Exit \nSelect your option : ");
-   scanf("%d",&no_of_overs);
+   scanf("%d",&choose_option);
    do{
 
-      if(no_of_overs==1)
+      if(choose_option==1)
       {
       printf("Enter No Of Overs: ");
       scanf("%d",&overs);
-      player1Toss=GetPlayerToss(player1,player2,overs); 
+      player1Toss=PlayerToss(player1,player2,overs); 
       
       }
-      else if(no_of_overs==2)
+      else if(choose_option==2)
       {
-      player1Toss=GetPlayerToss(player1,player2,0);
+      player1Toss=PlayerToss(player1,player2,0);
       }
-      else if(no_of_overs==3)
+      else if(choose_option==3)
       {
          printf("-----------------------------------------------> How To Play? <-------------------------------------------\n");
          printf("--> Until a player Won the toss Follow the Output and give whatever it asks you to give\n");
@@ -52,20 +52,20 @@ int main()
          printf("--> Where System will generate Random number as runs for both players.Player 1 runs keeps on adding until his runs equals to player 2 runs\n");
          printf("--> Finally When Player 1 is Out.Till then his runs are his final Score.The Same process will be Conducted for player 2.\n");
          printf("--> Finally whoever is having Highest Score is the Winner.\n\n");
-         printf("For Example:\n--> Player 1 Won the Toss And Chose Batting.\n-->Then Player 2 is bowling,it asks the player2  to enter to bowl when player 2 presses it generates a random number,\n");
-         printf("-->After it asks player 1 to press enter to bat whenhe press enter it generates a random number,\n--> if both numbers are equal then batsman is out otherwise bowelers bowls next ball until out or end of overs\n\n" );
+         printf("For Example:\n\n--> Player 1 Won the Toss And Chose Batting.\n--> Then Player 2 is bowling,it asks the player2  to enter to bowl when player 2 presses it generates a random number,\n");
+         printf("--> After it asks player 1 to press enter to bat whenhe press enter it generates a random number,\n--> if both numbers are equal then batsman is out otherwise bowelers bowls next ball until out or end of overs\n\n" );
       }
       else
       {
          printf("---------------------------------------->>>  Invalid Choice  <<<------------------------------------------\n");
       }
       printf("1 - Fixed Overs\n2 - Play Until Out\n3 - How to Play?\n4 - Exit\nSelect your option : ");
-      scanf("%d",&no_of_overs);
-   }while(no_of_overs >= 1 && no_of_overs <=  3);
+      scanf("%d",&choose_option);
+   }while(choose_option >= 1 && choose_option <=  3);
    return(0);
    }
 
-   int GetPlayerToss(char player1[],char player2[],int oversToplay)
+   int PlayerToss(char player1[],char player2[],int oversToplay)
    {
       int player1Choice,player2Choice,toss,player1Toss,batorbowlChoice,player2Score,player1Score;
       printf("%s --> Choose your choice either 1 for Head or 2 for Tail : ",player1);
