@@ -12,3 +12,4 @@
 | 4_TestPlanAndOutput | Documents with test plan and output |
 | 5_Report | Report of the project |
 | 6_Images_And_Videos | Project necessary images and videos wiil be here |
+
