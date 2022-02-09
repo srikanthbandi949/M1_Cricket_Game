@@ -109,28 +109,28 @@ int GetPlayerToss(char player1[],char player2[],int oversToplay)
   {
    player1Toss=2;
    printf("Player 2 %s Won the Toss\n",player2);
-   printf("Choose\n1 - Batting\n2 - Bowl: ");
+   printf("\n1 - Batting\n2 - Bowl\nChoose : ");
    scanf("%d",&batorbowlChoice);
    if(batorbowlChoice==1)
    {
-    printf("----------------%s is Going to bat Now-----------------------\n",player2);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player2);
     player2Score=batting(player2,player1,oversToplay);
-    printf("----------------%s is Going to bat Now-----------------------\n",player1);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player1);
     player1Score=batting(player1,player2,oversToplay);
-    printf("----------------Its Time for Results-----------------------\n");
+    printf("--------------------->  Its Time for Results  <-----------------------\n");
    }
    else
    {
-    printf("----------------%s is Going to bat Now-----------------------\n",player1);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player1);
     player1Score=batting(player1,player2,oversToplay);
-    printf("----------------%s is Going to bat Now-----------------------\n",player2);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player2);
     player2Score=batting(player2,player1,oversToplay);
-    printf("----------------Its Time for Results-----------------------\n");
+    printf("--------------------->  Its Time for Results  <-----------------------\n");
    }
   }
   else
   {
-   printf("------------------------------------------------Error-------------------------------------------------\n");
+   printf("---------------------------------------------->  Error  <-----------------------------------------------\n");
    return(0);
   }
   if(player1Score==player2Score)
@@ -168,10 +168,10 @@ int batting(char battingplayer[],char bowlingplayer[],int oversToplay)
     if(battingScore==bowlerSocre)
     {
      flag=0;
-     printf("-----------------%s is Out----------------\n",battingplayer);
+     printf("--------------------->  %s is Out  <-----------------------\n",battingplayer);
      printf("%s Total Score=%d\n",battingplayer,sum);
      if(sum==0)
-            printf("-----------Hehehe Duck Out-----------------\n");
+            printf("--------------------->  Hehehe Duck Out  <-----------------------\n");
      break;
     }
     else
@@ -208,10 +208,10 @@ int batting(char battingplayer[],char bowlingplayer[],int oversToplay)
   if(battingScore==bowlerSocre)
   {
    flag=0;
-   printf("-----------------%s is Out----------------\n",battingplayer);
+   printf("--------------------->  %s is Out  <------------------->\n",battingplayer);
    printf("%s Total Score=%d\n",battingplayer,sum);
    if(sum==0)
-   printf("-----------Hehehe Duck Out-----------------\n");
+   printf("--------------------->  Hehehe Duck Out  <---------------------\n");
    break;
   }
   else
