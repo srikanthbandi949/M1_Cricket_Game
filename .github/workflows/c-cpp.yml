@@ -9,12 +9,13 @@ on:
 jobs:
   build:
 
-    runs-on: windows
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: make all
-      run: make all -C 3_Implementation/
+    - name: make
+      working-directory: ./3_Implementation/version1
+      run: make
     - name: make
       run: make
     - name: make check
