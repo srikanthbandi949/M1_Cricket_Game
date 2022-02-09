@@ -1,4 +1,4 @@
-#include "hadcricket.h"
+#include "handcricket.h"
 
 
 int GetPlayerToss(char player1[],char player2[],int oversToplay);
