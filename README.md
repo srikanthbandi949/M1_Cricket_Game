@@ -3,6 +3,8 @@
 
 * Cricket Game Mini Project in c programm
 
+![HandCricket](./6_Images_And_Videos/HandCricket.png)
+
 # SDLC Activity Based Learning 
 |Build| Code Quality | Unity | Git inspector | 
 |-----|--------------|-------|---------------|
