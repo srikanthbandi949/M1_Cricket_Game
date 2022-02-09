@@ -90,19 +90,19 @@ int GetPlayerToss(char player1[],char player2[],int oversToplay)
    scanf("%d",&batorbowlChoice);
    if(batorbowlChoice==1)
    {
-        printf("----------------%s is Going to bat Now-----------------------\n",player1);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player1);
     player1Score=batting(player1,player2,oversToplay);
-    printf("----------------%s is Going to bat Now-----------------------\n",player2);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player2);
     player2Score=batting(player2,player1,oversToplay);
-    printf("----------------Its Time for Results-----------------------\n");
+    printf("--------------------->  Its Time for Results  <-----------------------\n");
    }
    else
    {
-    printf("----------------%s is Going to bat Now-----------------------\n",player2);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player2);
     player2Score=batting(player2,player1,oversToplay);
-    printf("----------------%s is Going to bat Now-----------------------\n",player1);
+    printf("--------------------->  %s is Going to bat Now  <-----------------------\n",player1);
     player1Score=batting(player1,player2,oversToplay);
-    printf("----------------Its Time for Results-----------------------\n");
+    printf("--------------------->  Its Time for Results  <-----------------------\n");
    }
   }
   else if(toss==player2Choice)
