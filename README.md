@@ -24,3 +24,9 @@
 | PS NO. | Name | Features |
 |--------|------|----------|
 | 99007538 | Srikanth Bandi | Entire Project: Requirements, Architecture, Implementation, Test plan,Report |
+
+
+# References
+
+* Cricket - The game of life implementation book by __Scyld Burry__
+* W3 Schools, Geeks for geeks
