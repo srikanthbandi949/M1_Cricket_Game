@@ -18,6 +18,7 @@
 #include<time.h>
 #include<stdlib.h>
 
+
 int PlayerToss(char player1[],char player2[],int oversToplay);
 int batting(char battingplayer[],char bowlingplayer[],int oversToplay);
 
