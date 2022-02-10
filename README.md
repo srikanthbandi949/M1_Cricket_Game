@@ -8,7 +8,7 @@
 # SDLC Activity Based Learning 
 |Build| Code Quality | Unity | Git inspector | 
 |-----|--------------|-------|---------------|
-|[![C/C++ CI](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/c-cpp.yml)| [![Cppcheck](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/Static-check.yml/badge.svg)](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/Static-check.yml)  ![Code quality](https://api.codiga.io/project/30930/status/svg)  |        |      |
+|[![C/C++ CI](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/c-cpp.yml)| [![Cppcheck](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/Static-check.yml/badge.svg)](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/Static-check.yml)  [![Code quality](https://api.codiga.io/project/30930/status/svg)]  |        | [![Contribution Check - Git Inspector](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/git-inspector.yml/badge.svg)](https://github.com/srikanthbandi949/M1_Cricket_Game/actions/workflows/git-inspector.yml) |
 
 ## Folder Structure
 | Folder | Description |
