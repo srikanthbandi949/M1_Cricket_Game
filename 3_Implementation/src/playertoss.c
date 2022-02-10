@@ -1,3 +1,14 @@
+/**
+ * @file hadcricket.h
+ * @author Srikanth Bandi
+ * @brief source files
+ * @version 0.1
+ * @date 2022-02-10
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include<stdio.h>
 #include<string.h>
 #include<time.h>
