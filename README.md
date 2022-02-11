@@ -28,7 +28,7 @@
 | 99007538 | Srikanth Bandi | Entire Project: Requirements, Architecture, Implementation, Test plan,Report | 2 | 2 | 0 |
 
 
-# References
+## References
 
-* Cricket - The game of life implementation book by __Scyld Burry__
+* Cricket - The game of life implementation by Scyld Burry
 * W3 Schools, Geeks for geeks

@@ -1,3 +1,4 @@
-#igonore all .exe files
+#igonore all files
 *.exe
 *.exe
+*.o
