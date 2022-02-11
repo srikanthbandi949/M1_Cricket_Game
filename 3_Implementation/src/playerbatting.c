@@ -9,10 +9,7 @@
  * 
  */
 
-// #include<stdio.h>
-// #include<string.h>
-// #include<time.h>
-// #include<stdlib.h>
+
 #include "handcricket.h"
 
 
@@ -43,18 +40,18 @@ int batting(char battingplayer[],char bowlingplayer[],int oversToplay)
      printf("--------------------->  %s is Out  <-----------------------\n",battingplayer);
      printf("%s Total Score=%d\n",battingplayer,sum);
      if(sum==0)
-            printf("--------------------->  Hehehe Duck Out  <-----------------------\n");
+            printf("--------------------->  OH Shit Duck Out  Better luck next time  <-----------------------\n");
      break;
     }
     else
     {
-     printf("Got %d runs\n",battingScore);
+     printf("\nGot %d runs\n",battingScore);
                     if(battingScore==6)
-                    printf("Sixerrrrrr Keep it Up\n");
+                    printf("-----Six-----\nwhat a shot man..\n");
                     if(battingScore==4)
-               printf("Its a Four\n");
+               printf("--Four---\nsuch a lovely play\n");
      sum=sum+battingScore;
-     printf("%s Score=%d\n",battingplayer,sum);
+     printf("%s Score=%d\n\n",battingplayer,sum);
     }
    }
    if(flag==0)
