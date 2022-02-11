@@ -9,14 +9,14 @@
  * 
  */
 
-#include "unity.h"
+#include "./unity/unity.h"
 
 /* Modify these two lines according to the project */
 #include "handcricket.h"
-#define PROJECT_NAME   "Hand_Cricket"
+#define PROJECT_NAME "Hand_Cricket"
 
 /* Prototypes for all the test functions */
-void test_GetPlayerToss(void);
+void test_PlayerToss(void);
 
 
 
@@ -30,19 +30,22 @@ void tearDown(){}
 int main()
 {
 /* Initiate the Unity Test Framework */
+
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(test_GetPlayerToss);
+
+  RUN_TEST(test_PlayerToss);
   
 
   /* Close the Unity Test Framework */
+
   return UNITY_END();
 }
 
 /* Write all the test functions */ 
 void test_PlayerToss(void) {
   TEST_ASSERT_EQUAL(7,PlayerToss("Dhoni","Virat",1));
- /* TEST_ASSERT_EQUAL(7,GetPlayerToss("Bairstow","Bhuvaneswar",1));*/
+  TEST_ASSERT_EQUAL(7,GetPlayerToss("Srikanth","Mahesh",1));
   
 }

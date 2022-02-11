@@ -23,9 +23,9 @@
 
 # Contriutors List and Summary
 
-| PS NO. | Name | Features |
-|--------|------|----------|
-| 99007538 | Srikanth Bandi | Entire Project: Requirements, Architecture, Implementation, Test plan,Report |
+| PS NO. | Name | Features | Number of testcases implemented | No_of testcases passed | No_of testcases failed | 
+|--------|------|----------|---------------------------------|------------------------|------------------------|
+| 99007538 | Srikanth Bandi | Entire Project: Requirements, Architecture, Implementation, Test plan,Report | 2 | 2 | 0 |
 
 
 # References
