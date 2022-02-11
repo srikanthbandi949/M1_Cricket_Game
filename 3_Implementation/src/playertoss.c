@@ -103,7 +103,7 @@ int PlayerToss(char player1[],char player2[],int oversToplay)
          printf("%s Won the Match\n\nThanks for Playing the Game\n",player1);
       }
       if(player1Score<player2Score){
-         printf("%s  score is : %d\n",player1,player1Score);
+         printf("\n%s  score is : %d\n",player1,player1Score);
          printf("%s  score is : %d\n\n",player2,player2Score);
          printf("%s Won the Match\nThanks for Playing the Game\n",player2);
       }

@@ -19,7 +19,7 @@ int batting(char battingplayer[],char bowlingplayer[],int oversToplay);
 int main()
 {
 
-   int i,j,overs,choose_option,player1Toss,player2Toss;
+   int overs,choose_option,player1Toss,player2Toss;
    char player1[50],player2[50];
    srand(time(NULL));
    printf("-----------------------------------> WELCOME TO HAND CRICKET GAME <-------------------------------------\n");
