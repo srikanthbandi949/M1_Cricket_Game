@@ -28,19 +28,19 @@ int batting(char battingplayer[],char bowlingplayer[],int oversToplay)
     fflush(stdin);
     scanf("%c",&c);
     fflush(stdin);
-    bowlerSocre=(int)rand()%7;//Generate from 0-6 where 0 means no ball
+    bowlerSocre=(int)rand()%7;//Generate from 0-6 where 0 means no run
     printf("%s Press Enter key to bat :",battingplayer);
     fflush(stdin);
     scanf("%c",&c);
     fflush(stdin);
-    battingScore=rand()%7;//Generate 0-6 runs
+    battingScore=rand()%7;//Generate 0-6 runs where 0 means no run
     if(battingScore==bowlerSocre)
     {
      flag=0;
      printf("--------------------->  %s is Out  <-----------------------\n",battingplayer);
      printf("%s Total Score=%d\n",battingplayer,sum);
      if(sum==0)
-            printf("--------------------->  OH Shit Duck Out  Better luck next time  <-----------------------\n");
+            printf("--------------------->  OH Shit   Duck Out!    Better luck next time  <-----------------------\n\n");
      break;
     }
     else
@@ -64,37 +64,42 @@ int batting(char battingplayer[],char bowlingplayer[],int oversToplay)
    {
       while(flag)
       {
-        printf("%s Press Enter key to bowl :",bowlingplayer);
-  fflush(stdin);
-  scanf("%c",&c);
-  fflush(stdin);
-  bowlerSocre=(int)rand()%7;//Generate from 0-6 where 0 means no ball
-  printf("%s Press Enter key to bat :",battingplayer);
-  fflush(stdin);
-  scanf("%c",&c);
-  fflush(stdin);
-  battingScore=rand()%7;//Generate 0-6 runs
-  if(battingScore==bowlerSocre)
-  {
-   flag=0;
-   printf("--------------------->  %s is Out  <------------------->\n",battingplayer);
-   printf("%s Total Score=%d\n",battingplayer,sum);
-   if(sum==0)
-   printf("--------------------->  Hehehe Duck Out  <---------------------\n");
-   break;
-  }
-  else
-  {
-   printf("Got %d runs\n",battingScore);
-            if(battingScore==6)
-            printf("Sixerrrrrr Keep it Up\n");
-            if(battingScore==4)
-       printf("Its a Four Great Man\n");
-   sum+=battingScore;
-   printf("%s Score=%d\n",battingplayer,sum);
-  }
+         printf("%s Press Enter key to bowl :",bowlingplayer);
+         fflush(stdin);
+         scanf("%c",&c);
+         fflush(stdin);
+         bowlerSocre=(int)rand()%7;//Generate from 0-6 where 0 means no ball
+         printf("%s Press Enter key to bat :",battingplayer);
+         fflush(stdin);
+         scanf("%c",&c);
+         fflush(stdin);
+         battingScore=rand()%7;//Generate 0-6 runs
+         if(battingScore==bowlerSocre)
+         {
+            flag=0;
+            printf("--------------------->  %s is Out  <------------------->\n",battingplayer);
+            printf("\n%s Total Score=%d\n\n",battingplayer,sum);
+            if(sum==0)
+            printf("--------------------->  OH Shit   Duck Out!    Better luck next time  <-----------------------\n\n");
+            break;
+         }
+         else
+         {
+               printf("Got %d runs\n",battingScore);
+                  if(battingScore==6){
+                     printf("-----Six-----\nwhat a shot man..\n");
+                  }
+                  if(battingScore==4){
+                     printf("--Four---\nsuch a lovely play\n");
+                  }
+
+               sum+=battingScore;
+               printf("%s Score=%d\n",battingplayer,sum);
+            }
       }
+
       return(sum);
+      
    }
  
 }

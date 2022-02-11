@@ -9,10 +9,7 @@
  * 
  */
 
-// #include<stdio.h>
-// #include<string.h>
-// #include<time.h>
-// #include<stdlib.h>
+
 
 #include "./inc/handcricket.h"
 
@@ -67,7 +64,10 @@ int main()
       scanf("%d",&choose_option);
    }while(choose_option >= 1 && choose_option <=  3);
    return(0);
-   }
+}
+
+
+// Player Toss code
 
 //    int PlayerToss(char player1[],char player2[],int oversToplay)
 //    {
@@ -165,6 +165,9 @@ int main()
 //       }
 //       return("\n",player1Toss);
 // }
+
+
+// Player Batting code
 
 // int batting(char battingplayer[],char bowlingplayer[],int oversToplay)
 // {
