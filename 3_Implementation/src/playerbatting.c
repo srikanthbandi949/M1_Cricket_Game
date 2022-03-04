@@ -45,7 +45,7 @@ int batting(char battingplayer[],char bowlingplayer[],int oversToplay)
                }
                else
                {
-                  printf("\nGot %d runs\n",battingScore);
+                  printf("Got %d runs\n",battingScore);
                   if(battingScore==6){
                      printf("-----Six-----\nwhat a shot man..\n");
                   }
