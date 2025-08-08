@@ -6,4 +6,4 @@
 
 * Guthub completion 
 
-* Hackerearth certificates
+* Hackerearth certificate
